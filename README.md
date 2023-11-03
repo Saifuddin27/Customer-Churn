@@ -1,107 +1,43 @@
 # Customer-Churn
 
-Problem Statement:
-You are the Data Scientist at a telecom company “Neo” whose customers are churning out to
-its competitors. You have to analyse the data of your company and find insights and stop your
-customers from churning out to other telecom companies.
-Customer_churn Dataset:
-The details regarding this ‘customer_churn’ dataset are present in the data dictionary
-Lab Environment: Anaconda
-Domain – Telecom
-Tasks to be done:
+Overview
+This project focuses on analyzing customer churn within the organization. Customer churn, also known as customer attrition, refers to the rate at which customers stop doing business with an entity. Understanding and reducing customer churn is crucial for the sustainability and growth of any business.
 
-A) Data Manipulation:
-a. Extract the 5th column & store it in ‘customer_5’
+Objective
+The main objectives of this project are:
 
-b. Extract the 15th column & store it in ‘customer_15’
+1. Identify key factors contributing to customer churn.
+2. Analyze customer behavior and preferences.
+3. Develop strategies to retain and engage customers.
+  
+Dataset
+The project utilizes a dataset containing customer information, transaction history, and relevant details. This dataset is crucial for performing in-depth analysis and deriving meaningful insights regarding customer churn.
 
-c. Extract all the male senior citizens whose Payment Method is Electronic check &
-store the result in ‘senior_male_electronic’
+Methodology
+The project follows these main steps:
 
-d. Extract all those customers whose tenure is greater than 70 months or their
-Monthly charges is more than 100$ & store the result in ‘customer_total_tenure’
+1. Data Collection: Obtain the dataset containing customer information, transaction history, and other relevant details.
+2. Data Cleaning and Preprocessing: Clean the data by handling missing values, removing duplicates, and formatting columns. Explore the data to understand its structure and identify any outliers or anomalies.
+3. Exploratory Data Analysis (EDA): Conduct exploratory data analysis to gain insights into customer behavior. This can include visualizations such as histograms, scatter plots, and bar charts.
+4. Feature Engineering: Create new features or variables that could be useful for segmentation. For example, calculate metrics like average purchase value, frequency of purchases, or recency of last purchase.
+5. Customer Segmentation: Use clustering techniques (e.g., K-means clustering) to segment customers into distinct groups based on their characteristics and behavior.
+6. Interpretation and Analysis: Analyze the results of the segmentation and provide insights into the characteristics of each customer segment.
+7. Recommendations: Based on the segmentation, provide recommendations on marketing strategies or promotions that could be tailored to each customer segment.
+8. Visualization and Reporting: Create visualizations and a summary report to present the findings. Use tools like Matplotlib, Seaborn, or Tableau for visualization.
+9. Documentation: Write a detailed report documenting the approach, methodology, and findings. This should be structured in a clear and organized manner.
 
-e. Extract all the customers whose Contract is of two years, payment method is Mailed
-check & the value of Churn is ‘Yes’ & store the result in ‘two_mail_yes’
+Deliverables
 
-f. Extract 333 random records from the customer_churndataframe& store the result in
-‘customer_333’
+The project will result in the following deliverables:
 
-g. Get the count of different levels from the ‘Churn’ column
+1. Cleaned and preprocessed dataset.
+2. Exploratory data analysis report with visualizations.
+3. Customer segmentation analysis and insights.
+4. Recommendations for customer retention strategies.
+5. Summary report with key findings and insights.
 
-B) Data Visualization:
-a. Build a bar-plot for the ’InternetService’ column:
+   
+Conclusion
 
-i. Set x-axis label to ‘Categories of Internet Service’
+The Customer Churn Analysis project aims to provide valuable insights into customer behavior and preferences. By understanding the factors contributing to churn, the organization can implement targeted strategies to retain and engage customers, ultimately leading to business growth and success.
 
-ii. Set y-axis label to ‘Count of Categories’
-
-iii. Set the title of plot to be ‘Distribution of Internet Service’
-
-
-iv. Set the color of the bars to be ‘orange’
-
-b. Build a histogram for the ‘tenure’ column:
-
-i. Set the number of bins to be 30
-
-ii. Set the color of the bins to be ‘green’
-
-iii. Assign the title ‘Distribution of tenure’
-
-
-c. Build a scatter-plot between ‘MonthlyCharges’ & ‘tenure’. Map ‘MonthlyCharges’ to
-the y-axis & ‘tenure’ to the ‘x-axis’:
-
-i. Assign the points a color of ‘brown’
-
-ii. Set the x-axis label to ‘Tenure of customer’
-
-iii. Set the y-axis label to ‘Monthly Charges of customer’
-
-iv. Set the title to ‘Tenure vs Monthly Charges’
-
-
-d. Build a box-plot between ‘tenure’ & ‘Contract’. Map ‘tenure’ on the y-axis &
-
-‘Contract’ on the x-axis.
-
-
-C) Linear Regression:
-a. Build a simple linear model where dependent variable is ‘MonthlyCharges’ and
-independent variable is ‘tenure’
-i. Divide the dataset into train and test sets in 70:30 ratio.
-ii. Build the model on train set and predict the values on test set
-iii. After predicting the values, find the root mean square error
-iv. Find out the error in prediction & store the result in ‘error’
-v. Find the root mean square error
-
-D) Logistic Regression:
-a. Build a simple logistic regression modelwhere dependent variable is ‘Churn’ &
-independent variable is ‘MonthlyCharges’
-i. Divide the dataset in 65:35 ratio
-ii. Build the model on train set and predict the values on test set
-iii. Build the confusion matrix and get the accuracy score
-b. Build a multiple logistic regression model where dependent variable is ‘Churn’ &
-independent variables are ‘tenure’ & ‘MonthlyCharges’
-i. Divide the dataset in 80:20 ratio
-ii. Build the model on train set and predict the values on test set
-iii. Build the confusion matrix and get the accuracy score
- Python for Data Science Training
-support@intellipaat.com - +91-7022374614 - US: 1-800-216-8930 (Toll Free)
-
-
-E) Decision Tree:
-a. Build a decision tree model where dependent variable is ‘Churn’ & independent
-variable is ‘tenure’
-i. Divide the dataset in 80:20 ratio
-ii. Build the model on train set and predict the values on test set
-iii. Build the confusion matrix and calculate the accuracy
-
-
-F) Random Forest:
-a. Build a Random Forest model where dependent variable is ‘Churn’ & independent
-variables are ‘tenure’ and ‘MonthlyCharges’
-i. Divide the dataset in 70:30 ratio
-ii. Build the model on train set and predict the values on test set
-iii. Build the confusion matrix and calculate the accuracy
